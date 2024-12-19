@@ -36,7 +36,7 @@ header nav a:hover {
   background-color: #d09238;
 }
 
-.search-bar {
+.barra-pesquisa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@ header nav a:hover {
   overflow: hidden;
 }
 
-.search-bar input {
+.barra-pesquisa input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -58,7 +58,7 @@ header nav a:hover {
   font-size: 16px;
 }
 
-.search-bar button {
+.barra-pesquisa button {
   padding: 10px 20px;
   background-color: #d09238;
   border: 1px solid #d09238;
@@ -69,7 +69,7 @@ header nav a:hover {
   transition: background-color 0.3s;
 }
 
-.search-bar button:hover {
+.barra-pesquisa button:hover {
   background-color: #b26a19;
 }
 
@@ -82,7 +82,7 @@ main {
   margin: 0 auto;
 }
 
-.card {
+.cartao-pais {
   background-color: white;
   border-radius: 20px;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
@@ -91,24 +91,24 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+.cartao-pais:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+.cartao-pais img {
   width: 200px;
   height: auto;
   margin-bottom: 15px;
 }
 
-.card h2 {
+.cartao-pais h2 {
   font-size: 18px;
   color: #b26a19;
   margin-bottom: 10px;
 }
 
-.card p {
+.cartao-pais p {
   margin: 5px 0;
   font-size: 14px;
 }
@@ -141,7 +141,7 @@ footer #paginacao button:disabled {
 }
 
 @media (max-width: 768px) {
-  .search-bar input {
+  .barra-pesquisa input {
     width: 100%;
   }
 
