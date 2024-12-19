@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1e9;
+  color: #333;
+}
+
+header {
+  background-color: #b26a19;
+  color: white;
+  padding: 15px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #d09238;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px; 
+  width: 100%; 
+  margin: 30px auto; 
+  border: 2px solid #d09238;
+  padding: 2px;
+  border-radius: 25px; 
+  overflow: hidden;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #d09238;
+  border: 1px solid #d09238;
+  border-radius: 0 20px 20px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #b26a19;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #b26a19;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f1e9;
+  border-top: 1px solid #ddd;
+}
+
+footer #paginacao button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #b26a19;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer #paginacao button:hover {
+  background-color: #d09238;
+}
+
+footer #paginacao button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 100%;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
